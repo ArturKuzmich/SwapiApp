@@ -3,7 +3,6 @@
     align-items: center;
     flex-flow: wrap;
     justify-content: space-evenly;
-    padding: 0 17%;
 }
 .pagination{
     display: flex;

@@ -9,7 +9,8 @@ import {getPlanets} from "./reducer/planets/actions";
 import thunk from "redux-thunk";
 import  reducer from './reducer'
 import {getCharacters} from "./reducer/characters/actions";
-
+import TopBar from "./components/top_bar/top_bar";
+import './style.css'
 const store = createStore( reducer, compose(
     applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : f => f
@@ -20,10 +21,11 @@ store.dispatch(getPlanets())
 
 const App = () => {
     return(
-        <div>
+        <div className='app_container'>
             <Router>
-                <Routes />
+                <TopBar />
             </Router>
+                <Routes />
         </div>
     )
 }

@@ -1,8 +1,12 @@
 import React from 'react'
+import './style.css'
+import TopBar from "../top_bar/top_bar";
 
 const HomePage = () => {
     return (
-        <div>HomePage</div>
+        <div className='home_page'>
+            asdasd
+        </div>
     )
 }
 

@@ -6,17 +6,16 @@ import PlanetDetails from "./components/planet_details/planet_details";
 import { createBrowserHistory } from "history";
 import HomePage from "./components/homepage/homepage";
 import CharacterList from "./components/characters/characters.list";
-
 const history = createBrowserHistory();
 
 export default  () => {
     return (
         <Router history={history}>
             <Switch>
-                <Route path='/' component={HomePage} exact/>
-                <Route path='/characters' component={CharacterList} exact/>
-                <Route path='/planets' component={PlanetList} exact />
-                <Route path='/planets/:id' component={PlanetDetails} />
+                <Route  exact path='/' component={HomePage} />
+                <Route  path='/characters' component={CharacterList} />
+                <Route  path='/planets' component={PlanetList}  />
+                <Route  path='/planets/:id' component={PlanetDetails} />
             </Switch>
         </Router>
 

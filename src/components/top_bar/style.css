@@ -1,0 +1,29 @@
+.top_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 40px 0;
+}
+.top_bar a {
+   font-family: "Roboto Light";
+    font-size: 32px;
+    line-height: 29px;
+    color: #261EBE;
+}
+.bar_navigation{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.navigation_item{
+    list-style: none;
+}
+.navigation_item .selected{
+    border-bottom: 4px solid #0B3F8D;
+}
+.navigation_item a {
+    font-size: 24px;
+}
