@@ -1,0 +1,53 @@
+.planet_details{
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 100%);
+    filter: drop-shadow(3px 3px 8px rgba(27, 27, 27, 0.6));
+    border-radius: 10px;
+}
+.planet_name{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 52px;
+    font-family: fantasy;
+    padding: 20px 0 20px 0;
+}
+.planet_desc{
+    font-size: 36px;
+    font-family: cursive;
+    color: #ea5e45;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 25px;
+}
+.planet_desc span{
+    font-size: 30px;
+    color: darkcyan;
+    font-family: monospace;
+    margin-left: 40px;
+
+}
+.title_residents{
+    font-size: 28px;
+    margin: 10px 0 10px 0;
+    font-family: system-ui;
+    color: seagreen;
+}
+.planet_residents{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.planet_residents h6 {
+    text-align: center;
+    margin: 0px 0 20px 0;
+    font-size: 15px;
+    line-height: 21px;
+    font-family: cursive;
+}

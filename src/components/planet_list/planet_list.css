@@ -1,0 +1,13 @@
+.planet_list{
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding: 0 17%;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}

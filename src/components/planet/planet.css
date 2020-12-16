@@ -1,0 +1,41 @@
+a{
+    text-decoration: none;
+}
+
+
+.planet_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 100%);
+    filter: drop-shadow(3px 3px 8px rgba(27, 27, 27, 0.6));
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.about_planet .name{
+     color: #0B3F8D;
+    font-size: 18px;
+    font-weight: bold;
+}
+.about_planet .climat{
+    color: #05D261;
+    font-size: 18px;
+    font-weight: bold;
+}
+.about_planet .population{
+    color: rgba(1, 21, 51, 0.92);
+    font-weight: bold;
+    font-size: 18px;
+}
+.about_planet {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 142.5%;
+    color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
