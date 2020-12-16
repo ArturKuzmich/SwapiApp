@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import {createStore, applyMiddleware, compose} from 'redux'
 import {Provider} from 'react-redux'
 import {BrowserRouter as Router} from 'react-router-dom'
+import { createBrowserHistory } from "history";
 import Routes from './routes'
 import {getPlanets} from "./reducer/planets/actions";
 import thunk from "redux-thunk";
@@ -11,6 +12,11 @@ import  reducer from './reducer'
 import {getCharacters} from "./reducer/characters/actions";
 import TopBar from "./components/top_bar/top_bar";
 import './style.css'
+
+
+
+const history = createBrowserHistory();
+
 const store = createStore( reducer, compose(
     applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : f => f
@@ -19,17 +25,17 @@ const store = createStore( reducer, compose(
 store.dispatch(getCharacters());
 store.dispatch(getPlanets())
 
-const App = () => {
-    return(
-        <div className='app_container'>
-            <Router>
-                <TopBar />
-            </Router>
-                <Routes />
-        </div>
-    )
-}
 
+const App = () => {
+     return(
+         <div className='app_container'>
+             <Router history={history}>
+                 <TopBar />
+                 <Routes />
+             </Router>
+         </div>
+     )
+ }
 ReactDOM.render(
     <Provider store={store}>
         <App />
