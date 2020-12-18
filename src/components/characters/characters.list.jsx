@@ -2,14 +2,15 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {setChoosedCharacter, getChoosedProfile} from "../../reducer/character/actions";
 import CharacterProfile from "../characterprofile/characterprofile";
-
+import './style.css'
 
 const CharacterList = ({characters, setCharacter}) =>
-    <div className='character_list'>
+    <div className='characters_list'>
             <h1>Characters</h1>
-            <ul>
+            <ul className='characters_items'>
                 {characters.map((c, i) => (
                     <li
+                        className='characters_item'
                         onClick={setCharacter(i + 1)}
                         key={c.name}>
                         {c.name}
