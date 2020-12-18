@@ -1,3 +1,7 @@
+body {
+    background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg)!important;
+}
+
 .star {
     animation: star 10s ease-out infinite;
 }
@@ -81,9 +85,7 @@
 }
 
 /* General styles and layout */
-body {
-    background: #000 url(//cssanimation.rocks/demo/starwars/images/bg.jpg);
-}
+
 
 .starwars-demo {
     height: 17em;

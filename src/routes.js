@@ -3,6 +3,7 @@ import {Switch, Route} from 'react-router-dom'
 // import PlanetList from "./components/planet_list/planet_list";
 // import PlanetDetails from "./components/planet_details/planet_details";
 import HomePage from "./components/homepage/homepage";
+import Loading from "./components/loading/loading";
 // import CharacterList from "./components/characters/characters.list";
 
 const PlanetDetails = lazy(
@@ -15,24 +16,24 @@ const CharacterList = lazy(
 )
 export default () => {
     return (
-        <Suspense fallback={<h1>Loafing ...</h1>}>
+        <Suspense fallback={<Loading />}>
             <Switch>
                 <Route exact path='/'>
                     <HomePage/>
                 </Route>
                 <Route exact path='/characters'>
-                    <Suspense fallback={<h1>Loading...</h1>}>
+                    <Suspense fallback={<Loading />}>
                         <CharacterList/>
                     </Suspense>
                 </Route>
                 <Route exact path='/planets'>
-                    <Suspense fallback={<h1>Loading...</h1>}>
+                    <Suspense fallback={<Loading />}>
                         <PlanetList/>
                     </Suspense>
                 </Route>
 
                 <Route exact path='/planets/:id'>
-                    <Suspense fallback={<h1>Loading...</h1>}>
+                    <Suspense fallback={<Loading />}>
                         <PlanetDetails/>
                     </Suspense>
                 </Route>
