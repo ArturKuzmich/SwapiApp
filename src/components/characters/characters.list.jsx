@@ -6,6 +6,7 @@ import './style.css'
 import CharacterWorld from "../characterworld/characterworld";
 
 const CharacterList = ({characters, setCharacter}) =>
+    <div className='swapi_characters'>
     <div className='characters_list'>
             <h1>Characters</h1>
             <ul className='characters_items'>
@@ -18,10 +19,11 @@ const CharacterList = ({characters, setCharacter}) =>
                     </li>
                 ))}
             </ul>
+    </div>
         <CharacterProfile />
         <CharacterWorld />
-    </div>
 
+    </div>
 
 
 

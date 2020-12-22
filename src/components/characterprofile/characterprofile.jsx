@@ -2,7 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux';
 import './style.css'
 const CharacterProfile = ({profile}) => {
-    console.log('profile2',profile)
+
+
     return (
         <div className='characters_profile'>
           <h2>Profile</h2>
