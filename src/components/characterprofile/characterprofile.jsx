@@ -6,7 +6,7 @@ const CharacterProfile = ({profile}) => {
 
     return (
         <div className='characters_profile'>
-          <h2>Profile</h2>
+          <h2 className='profile_title'>Profile</h2>
             {profile.name && <div className='profile_item'>Name: <p>  {profile.name}</p></div>}
             {profile.height &&  <div className='profile_item'>Height:  <p> {profile.height}cm</p></div>}
             {profile.mass &&  <div className='profile_item'>Weight: <p> {profile.mass}kg</p></div>}

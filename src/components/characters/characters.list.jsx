@@ -8,7 +8,7 @@ import CharacterWorld from "../characterworld/characterworld";
 const CharacterList = ({characters, setCharacter}) =>
     <div className='swapi_characters'>
     <div className='characters_list'>
-            <h1>Characters</h1>
+            <h2 className='title'>Characters</h2>
             <ul className='characters_items'>
                 {characters.map((c, i) => (
                     <li

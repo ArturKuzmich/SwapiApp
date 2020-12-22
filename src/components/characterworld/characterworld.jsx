@@ -8,7 +8,7 @@ const isRequest = desc => desc && desc !== 'unknown'
 const CharacterWorld = ({world}) => {
     return(
         <div className='world_list'>
-            <h2>World</h2>
+            <h2 className='world_title'>World</h2>
             {isRequest(world.name) && <div className='world_item'>Name: {world.name}</div>}
             {isRequest(world.population) && <div className='world_item'>Population: {world.population}</div>}
             {isRequest(world.diameter) &&  <div className='world_item'>Diameter: {world.diameter}</div>}

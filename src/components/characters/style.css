@@ -4,12 +4,13 @@
     flex-direction: column;
     width: 40%;
 }
-h1{
+.title{
     color: #0B3F8D;
     font-size: 45px;
-    line-height: 29px;
+    line-height: 49px;
     text-align: center;
     font-weight: 600;
+    margin: 0 0 10px 0;
 }
 .swapi_characters{
     display: flex;
