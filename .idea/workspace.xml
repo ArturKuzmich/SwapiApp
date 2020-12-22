@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6fc9622-5afd-4d8a-b1f7-8f11179c488d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/loading/loading.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/loading/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/characterworld/characterworld.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducer/character/world.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/homepage/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/top_bar/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/top_bar/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/characters/characters.list.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/characters/characters.list.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer/character/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/character/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducer/character/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducer/character/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,8 @@
       <updated>1608139808224</updated>
       <workItem from="1608139815297" duration="9441000" />
       <workItem from="1608193430063" duration="36000" />
-      <workItem from="1608310393605" duration="4374000" />
+      <workItem from="1608310393605" duration="5071000" />
+      <workItem from="1608643942954" duration="2063000" />
     </task>
     <servers />
   </component>

@@ -31,7 +31,6 @@ export default () => {
                         <PlanetList/>
                     </Suspense>
                 </Route>
-
                 <Route exact path='/planets/:id'>
                     <Suspense fallback={<Loading />}>
                         <PlanetDetails/>

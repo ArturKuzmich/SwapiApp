@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import {setChoosedCharacter, getChoosedProfile} from "../../reducer/character/actions";
 import CharacterProfile from "../characterprofile/characterprofile";
 import './style.css'
+import CharacterWorld from "../characterworld/characterworld";
 
 const CharacterList = ({characters, setCharacter}) =>
     <div className='characters_list'>
@@ -18,6 +19,7 @@ const CharacterList = ({characters, setCharacter}) =>
                 ))}
             </ul>
         <CharacterProfile />
+        <CharacterWorld />
     </div>
 
 
