@@ -4,6 +4,7 @@ import {setChoosedCharacter, getChoosedProfile} from "../../reducer/character/ac
 import CharacterProfile from "../characterprofile/characterprofile";
 import './style.css'
 import CharacterWorld from "../characterworld/characterworld";
+import CharacterFilms from "../characterfilms/characterFilms";
 
 const CharacterList = ({characters, setCharacter}) =>
     <div className='swapi_characters'>
@@ -22,7 +23,7 @@ const CharacterList = ({characters, setCharacter}) =>
     </div>
         <CharacterProfile />
         <CharacterWorld />
-
+        <CharacterFilms />
     </div>
 
 

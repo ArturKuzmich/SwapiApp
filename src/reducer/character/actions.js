@@ -9,6 +9,7 @@ export function getChoosedProfile(id) {
         fetch(`${API_URL}/people/${id}`)
             .then(res => res.json())
             .then(profile => {
+                console.log(profile)
                 dispatch(setChoosedProfile(profile))
                 dispatch(getCharacterWorld(profile.homeworld));
                 dispatch(getCharacterFilms(profile.films))
@@ -27,7 +28,7 @@ export function getCharacterFilms(filmsUrl){
     return dispatch =>
         Promise.all(filmsUrl.map(filmUrl =>
             fetch(filmUrl)
-                .then(res => res.json())
+                .then(res =>  res.json())
         ))
             .then(films =>
                 dispatch(setCharacterFilms(films))
