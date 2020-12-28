@@ -1,0 +1,68 @@
+.character_films-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.films_list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.film_detail-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom:  2px solid #0B3F8D;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    filter: drop-shadow(3px 3px 8px rgba(27, 27, 27, 0.6));
+}
+.film_name{
+    text-align: center;
+    color: #05D261;
+    font-size: 24px;
+    font-weight: bold;
+}
+.films_top-title{
+    color: #FFFFFF;
+    font-size: 45px;
+    line-height: 49px;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+}
+.film_desc{
+    margin:  0 0 10px 0;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 0;
+    border-bottom: none;
+}
+.film_people{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.people{
+    color: #FFFFFF;
+    margin: 0 25px 10px 0;
+}
+
+.people span{
+    color:  red;
+    margin: 0 0 0 10px;
+}
+.release_date{
+    color: #0B3F8D;
+    font-size: 18px;
+    font-weight: bold;
+}
+.release_date span{
+    color: #FFFFFF;
+}
